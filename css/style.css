@@ -2906,6 +2906,7 @@ body.is-scrolled:not(.kpop-body) .site-header {
   align-items: center;
   gap: 8px;
   width: 222px;
+  max-width: 100%;
   height: 42px;
   padding: 0 13px;
   border-bottom: 1px solid rgba(34, 34, 34, .45);
@@ -5043,6 +5044,12 @@ body.has-new-panel {
   }
 }
 
+@media (max-width: 960px) {
+  .genre-product-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 760px) {
   .genre-rail {
     display: none;
@@ -5398,6 +5405,13 @@ body.has-new-panel {
 
   .recommend-section {
     scroll-margin-top: 208px;
+  }
+}
+
+@media (max-width: 560px) {
+  .about-hero,
+  .about-values {
+    width: calc(100% - 32px);
   }
 }
 
